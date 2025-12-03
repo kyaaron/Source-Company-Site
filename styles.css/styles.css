@@ -17,7 +17,6 @@ LAYOUTS
 .left-nav-container, .middle-nav-container, .right-nav-container {
     float: left;
     width: 33.33%;
-    border: 1px solid black;
     height: 50px;
 }
 /* Tagline section layout */
@@ -25,7 +24,6 @@ LAYOUTS
     float: left;
     width: 50%;
     height: 500px;
-    border: 1px solid black;
     background-color: rgb(220, 230, 248);
 }
 /* Feature container layout */
@@ -34,6 +32,8 @@ LAYOUTS
     width: 25%;
     border: 1px solid black;
     height: 300px;
+    background-color: rgb(220, 230, 248);
+    padding: 30px 0 0 0;
 }
 /* Bottom container layout */
 .bottom-container {
@@ -113,4 +113,17 @@ img {
     width: auto;
     transform: translate(40%);
     background-color: rgb(220, 230, 248);
+}
+/* Feature container styles */
+.feature-header {
+    color: rgb(0, 52, 88);
+    padding: 0 9%;
+}
+.feature-paragraph {
+    color: rgb(0, 52, 88);
+    padding: 15px 9% 25px 9%;
+}
+.feature-link {
+    color: rgb(0, 52, 88);
+    padding: 0 9%;
 }
