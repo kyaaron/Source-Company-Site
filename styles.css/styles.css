@@ -1,0 +1,46 @@
+/**************************
+UNIVERSAL
+**************************/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/**************************
+LAYOUTS
+**************************/
+/* Header layout */
+.left-nav-container, .middle-nav-container, .right-nav-container {
+    float: left;
+    width: 33.33%;
+    border: 1px solid black;
+    height: 50px;
+}
+/* Tagline section layout */
+.tagline-section, .tagline-image-section {
+    float: left;
+    width: 50%;
+    height: 500px;
+    border: 1px solid black;
+}
+/* Feature container layout */
+.feature-container {
+    float: left;
+    width: 25%;
+    border: 1px solid black;
+    height: 300px;
+}
+/* Bottom container layout */
+.bottom-container {
+    float: left;
+    width: 100%;
+    border: 1px solid black;
+    height: 300px;
+}
+
+/**************************
+ADDITIONAL STYLES
+**************************/
