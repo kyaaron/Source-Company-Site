@@ -74,7 +74,7 @@ header {
 }
 /* Tagline display styles */
 .tagline-section {
-    padding-top: 90px;
+    padding: 90px 0 0 0;
 }
 .tagline {
     padding: 0 0 20px 14%;
@@ -99,10 +99,18 @@ input[type="text"] {
     border: none;
     background-color: rgb(0, 52, 88);
     color: white;
-    margin: 0 0 20px 0;
+    margin: 0 0 20px -5px;
+    padding: 10px 0;
 }
 .about-paragraph {
     color: rgb(0, 52, 88);
     font-size: 1.2rem;
     padding: 10px 0 0 14%;
+}
+/* Webpage image display styles */
+img {
+    height: 100%;
+    width: auto;
+    transform: translate(40%);
+    background-color: rgb(220, 230, 248);
 }
