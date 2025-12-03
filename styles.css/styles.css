@@ -26,6 +26,7 @@ LAYOUTS
     width: 50%;
     height: 500px;
     border: 1px solid black;
+    background-color: rgb(220, 230, 248);
 }
 /* Feature container layout */
 .feature-container {
@@ -47,7 +48,7 @@ ADDITIONAL STYLES
 **************************/
 /* Navigation bar styles */
 header {
-    background-color: rgb(227, 236, 255);
+    background-color: rgb(220, 230, 248);
     height: 50px;
 }
 .company-name {
@@ -63,11 +64,45 @@ header {
 }
 .header-btn {
     float: right;
-    width: 20%;
+    width: 100px;
     height: 30px;
     margin: 7px 15px 0 0;
     border: none;
     background-color: rgb(0, 52, 88);
     color: white;
     border-radius: 5px;
+}
+/* Tagline display styles */
+.tagline-section {
+    padding-top: 90px;
+}
+.tagline {
+    padding: 0 0 20px 14%;
+}
+h1 {
+    color: rgb(0, 52, 88);
+    padding: 10px 14%;
+    font-size: 2.5rem;
+}
+input[type="text"] {
+    height: 30px;
+    width: 35%;
+    border: none;
+    background-color: rgb(203, 213, 236);
+    color: rgb(0, 52, 88);
+    font-size: 1.2rem;
+    margin: 0 0 0 14%;
+}
+.tagline-btn {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: rgb(0, 52, 88);
+    color: white;
+    margin: 0 0 20px 0;
+}
+.about-paragraph {
+    color: rgb(0, 52, 88);
+    font-size: 1.2rem;
+    padding: 10px 0 0 14%;
 }
