@@ -1,147 +1,276 @@
-/**************************
-UNIVERSAL
-**************************/
+/*
+    - Dark blue: rgb(50, 68, 87)
+    - Light blue background: rgb(246, 249, 252)
+    - Search box blue: rgb(227, 234, 240)
+*/
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(246, 249, 252);
 }
 
-/**************************
-LAYOUTS
-**************************/
-/* Header layout */
-.left-nav-container, .middle-nav-container, .right-nav-container {
-    float: left;
-    width: 33.33%;
-    height: 50px;
-}
-/* Tagline section layout */
-.tagline-section, .tagline-image-section {
-    float: left;
-    width: 50%;
-    height: 500px;
-    background-color: white;
-}
-/* Feature container layout */
-.feature-container {
-    float: left;
-    width: 25%;
-    height: 300px;
-    background-color: white;
-    padding: 30px 0 0 15px;
-}
-/* Bottom container layout */
-.bottom-container {
-    float: left;
-    width: 100%;
-    height: 300px;
-    padding: 30px 0 0 15px;
-    background-color: rgb(220, 230, 248);
-}
-
-/**************************
-ADDITIONAL STYLES
-**************************/
-/* Navigation bar styles */
+/* Universal Header styles */
 header {
-    background-color: rgb(220, 230, 248);
-    height: 50px;
+    background-color: rgb(246, 249, 252);
+}
+body {
+        margin: 0 7%;
 }
 .company-name {
-    font-size: 1.8rem;
-    color: rgb(0, 52, 88);
-    padding: 5px 0 0 20px;
-}
-.header-nav-link {
-    float: left;
-    width: 25%;
-    text-align: center;
-    padding: 13px 0 0 0;
-}
-.header-btn {
-    float: right;
-    width: 100px;
-    height: 30px;
-    margin: 7px 15px 0 0;
-    border: none;
-    background-color: rgb(0, 52, 88);
-    color: white;
-    border-radius: 5px;
-}
-/* Tagline display styles */
-.tagline-section {
-    padding: 90px 0 0 0;
-}
-.tagline {
-    padding: 0 0 20px 14%;
-}
-h1 {
-    color: rgb(0, 52, 88);
-    padding: 10px 14%;
-    font-size: 2.5rem;
-}
-input[type="text"] {
-    height: 30px;
-    width: 35%;
-    border: none;
-    background-color: rgb(220, 230, 248);
-    color: rgb(0, 52, 88);
-    font-size: 1.1rem;
-    padding-left: 15px;
-    margin: 0 0 0 14%;
-}
-.tagline-btn {
-    width: 100px;
-    height: 30px;
-    border: none;
-    background-color: rgb(0, 52, 88);
-    color: white;
-    margin: 0 0 20px -5px;
-    padding: 10px 0;
-}
-.about-paragraph {
-    color: rgb(0, 52, 88);
-    font-size: 1.1rem;
-    padding: 10px 0 0 14%;
-}
-/* Webpage image display styles */
-.tagline-img {
-    height: 100%;
-    width: auto;
-    transform: translate(20%);
-    background-color: rgb(220, 230, 248);
-}
-/* Feature container styles */
-.feature-img {
-    width: 50px;
-    height: auto;
-    margin: 0 6%;
-}
-.feature-header {
-    color: rgb(0, 52, 88);
-    padding: 0 6%;
-}
-.feature-paragraph {
-    color: rgb(0, 52, 88);
-    padding: 15px 6% 25px 6%;
-}
-.feature-link {
-    color: rgb(0, 52, 88);
-    padding: 0 6%;
+    color: rgb(50, 68, 87);
+    font-family: "Commissioner", sans-serif;
+    font-size: 2.0rem;
+    font-weight: 600;
 }
 
-/* Bottom container styles */
-h2 {
-    padding: 10px 6%;
-    color: rgb(0, 52, 88);
-    font-size: 2.1rem;
+/* Mobile layouts */
+@media screen and (max-width: 768px) {
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+    }
+    header > ul {
+        display: none;
+    }
+    .mobile-menu-container > button {
+        width: 50px;
+        height: 50px;
+        font-size: 45px;
+        border: 0.5px solid black;
+        border-radius: 5px;
+    }
+    /* Top section */
+    .top-section {
+        padding: 30px 0 20px 0;
+    }
+    h1, p, button, input {
+        font-family: "Commissioner", sans-serif;
+        color: rgb(50, 68, 87);
+    }
+    h1, .tagline-paragraph {
+        padding-bottom: 30px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .tagline-paragraph {
+        font-size: 1.4rem;
+        padding-top: 30px;
+    }
+    .input-container {
+        display: block;
+    }
+    input {
+        height: 40px;
+        width: 100%;
+        border: none;
+        background-color: rgb(227, 234, 240);
+        color: rgb(50, 68, 87);
+        padding-left: 10px;
+        font-size: 1.3rem;
+    }
+    .input-btn {
+        height: 40px;
+        width: 100%;
+        border: 0.5px solid black;
+        margin-top: 10px;
+        background-color: rgb(50, 68, 87);
+        color: white;
+        font-size: 1.3rem;
+    }
+    /* Feature styles */
+    .feature-card {
+        display: block;
+        width: 100%;
+        height: 220px;
+    }
+    .feature-header, .feature-paragraph, .feature-link {
+        font-family: "Commissioner", sans-serif;
+        color: rgb(50, 68, 87);
+        margin: 0 0 15px 0;
+    }
+    .feature-header {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .feature-paragraph, .feature-link {
+        font-size: 1.2rem;
+    }
+    .feature-icon {
+        padding-bottom: 20px;
+    }
+    /* About section */
+    h2 {
+        font-family: "Commissioner", sans-serif;
+        color: rgb(50, 68, 87);
+        font-size: 2.0rem;
+        padding: 20px 0;
+    }
+    .about-paragraph {
+        font-size: 1.3rem;
+    }
+    .about-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;;;
+        width: 100%;
+        height: 250px;
+    }
+    .temp-square {
+        width: 100%;
+        height: 200px;
+        background-color: rgb(227, 234, 240);
+    }
+    
 }
-h2 + p {
-    padding: 10px 6%;
-    color: rgb(0, 52, 88);
-    font-size: 1.1rem;
+
+/* Desktop layouts */
+@media screen and (min-width: 769px) {
+
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        align-items: center;
+    }
+    .company-name {
+        width: 25%;
+    }
+    .mobile-menu-container {
+        display: none;
+        width: 50%;
+    }
+    .navbar-item {
+        display: inline;
+        list-style-type: none;
+        padding: 0 15px;
+        font-family: "Commissioner", sans-serif;
+        font-size: 1.2rem;
+        color: rgb(50, 68, 87);
+        font-weight: 500;
+    }
+    .blank-spacing-div {
+        width: 25%;
+    }
+    /* Top section styles */
+    .top-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        background-color: rgb(246, 249, 252);
+    }
+    .tagline-section, .tagline-image {
+        width: 50%;
+    }
+    h1, p, button, input {
+        font-family: "Commissioner", sans-serif;
+        color: rgb(50, 68, 87);
+    }
+    h1, .tagline-paragraph {
+        padding-bottom: 30px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .tagline-paragraph {
+        font-size: 1.4rem;
+    }
+    input, button {
+        margin-bottom: 30px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        border: none;
+        background-color: rgb(50, 68, 87);
+        color: white;
+    }
+    input {
+        height: 40px;
+        width: 70%;
+        border: none;
+        background-color: rgb(227, 234, 240);
+        color: rgb(50, 68, 87);
+        padding-left: 10px;
+    }
+    button {
+        height: 40px;
+        width: 100px;
+    }
+    button:hover {
+        background-color: rgb(64, 87, 111)
+    }
+    /* Feature styles */
+    .features-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .feature-card {
+        display: block;
+        width: 25%;
+        height: 150px;
+    }
+    .feature-header, .feature-icon, .feature-paragraph, .feature-link {
+        padding: 0 15px 15px 0;
+    }
+    .feature-header {
+        font-size: 1.0rem;
+        font-weight: 600;
+        font-family: "Commissioner", sans-serif;
+        color: rgb(50, 68, 87);
+    }
+    .feature-link {
+        font-family: "Commissioner", sans-serif;
+    }
+    .feature-icon {
+        margin-bottom: 5px;
+    }
+    /* About section */
+    h2, .about-paragraph {
+        font-family: "Commissioner", sans-serif;
+        color: rgb(50, 68, 87);
+    }
+    h2 {
+        font-size: 2.5rem;
+        padding: 40px 0;
+    }
+    .about-paragraph {
+        font-size: 1.2rem;
+    }
+    .about-collecting-info-section {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .top-about-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-about-container-left, .top-about-container-blank {
+        width: 50%;
+    }
+    .about-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;;
+        width: 100%;
+        height: 250px;
+    }
+    .temp-square {
+        width: 100%;
+        height: 200px;
+    }
 }
+

@@ -3,71 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Source Inc.</title>
+    <title>Document</title>
+
+    <!-- Google font: Commissioner -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/11d414a099.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="left-nav-container">
-                <h2 class="company-name">Source</h2>
-            </div>
-            <div class="middle-nav-container">
-                <span class="header-nav-link">First Link</span>
-                <span class="header-nav-link">Second Link</span>
-                <span class="header-nav-link">Third Link</span>
-                <span class="header-nav-link">Fourth Link</span>
-            </div>
-            <div class="right-nav-container">
-                <button class="header-btn">Button</button>
-            </div>
-        </nav>
+        <div class="mobile-menu-container">
+            <button>=</button>
+        </div>
+        <p class="company-name">Source</p>
+        <ul>
+            <li class="navbar-item">First Link</li>
+            <li class="navbar-item">Second Link</li>
+            <li class="navbar-item">Third Link</li>
+            <li class="navbar-item">Fourth Link</li>
+        </ul>
+        <div class="blank-spacing-div"></div>
     </header>
     <main>
-        <section>
+        <!-- Top section -->
+        <section class="top-section">
             <div class="tagline-section">
-                <p class="tagline">TAGLINE</p>
                 <h1>Source helps creators do more of what they love</h1>
-                <input type="text" placeholder="Placeholder">
-                <button class="tagline-btn">Button</button>
-                <p class="about-paragraph">A device that enables collaboration will lessen the chance of work having to be completely redone.</p>
+                <div class="input-container">
+                    <input type="text" placeholder="Search here" />
+                    <button class="input-btn" type="submit">Submit</button>
+                </div>
+                <p class="tagline-paragraph">A device that enables collaboration will lesson the chance of work having to be completely redone.</p>
             </div>
-            <div class="tagline-image-section">
-                <img class="tagline-img" src="assets/computer-tablet-phone.jpg" alt="Clipart image of a laptop computer" />
-            </div>
+            <div class="tagline-image"></div>
         </section>
-        <section>
-            <div class="feature-container">
-                <img class="feature-img" src="assets/cloud-icon.jpg" alt="#"/>
-                <h3 class="feature-header">Feature One</h3>
+        <!-- Features section -->
+        <section class="features-container">
+            <div class="feature-card">
+                <i class="feature-icon fa-solid fa-globe fa-2x"></i><br>
+                <span class="feature-header">Feature One</span>
                 <p class="feature-paragraph">In such a test, the user performs realistic tasks by interacting with the paper prototype</p>
-                <a class="feature-link">First Link ></a>
+                <a class="feature-link" href="#">First link ></a>
             </div>
-            <div class="feature-container">
-                <img class="feature-img" src="assets/cloud-icon.jpg" alt="#"/>
-                <h3 class="feature-header">Feature Two</h3>
+            <div class="feature-card">
+                <i class="feature-icon fa-solid fa-layer-group fa-2x"></i><br>
+                <span class="feature-header">Feature Two</span>
                 <p class="feature-paragraph">Three techniques of paper prototyping used for usability testing are comps, wireframes</p>
-                <a class="feature-link">Second Link ></a>
+                <a class="feature-link" href="#">Second link ></a>
             </div>
-            <div class="feature-container">
-                <img class="feature-img" src="assets/cloud-icon.jpg" alt="#"/>
-                <h3 class="feature-header">Feature Three</h3>
-                <p class="feature-paragraph">Rapid prototyping involves a group of designers who each create a paper prototype</p>
-                <a class="feature-link">Third Link ></a>
+            <div class="feature-card">
+                <i class="feature-icon fa-solid fa-circle-half-stroke fa-2x"></i><br>
+                <span class="feature-header">Feature Three</span>
+                <p class="feature-paragraph">Rapid prototyping involves a group of designers who each created a paper prototype</p>
+                <a class="feature-link" href="#">Third link ></a>
             </div>
-            <div class="feature-container">
-                <img class="feature-img" src="assets/cloud-icon.jpg" alt="#"/>
-                <h3 class="feature-header">Feature Four</h3>
+            <div class="feature-card">
+                <i class="feature-icon fa-solid fa-droplet fa-2x"></i><br>
+                <span class="feature-header">Feature Four</span>
                 <p class="feature-paragraph">Functionality is similarly unimportant, but in this case are closer to the final product</p>
-                <a class="feature-link">Fourth Link ></a>
+                <a class="feature-link" href="#">Fourth link ></a>
             </div>
         </section>
-        <section>
-            <div class="bottom-container">
-                <h2>Collecting information about the problem</h2>
-                <p>In the context of information architecture, information is separate from <br>both knowledge and data, and lies nebulously between them.</p>
+        <!-- About/Collecting Info section -->
+        <section class="about-collecting-info-section">
+            <div class="top-about-container">
+                <div class="top-about-container-left">
+                    <h2>Collecting information about the problem</h2>
+                    <p class="about-paragraph">In the context of information architecture, information is separate from both knowledge and data, and lies nebulously between them.</p>
+                </div>
+                <div class="top-about-container-blank"></div>
+            </div>
+            <div class="about-img">
+                <div class="temp-square"></div>
             </div>
         </section>
     </main>
 </body>
 </html>
+
+<!-- 50, 68, 87-->
