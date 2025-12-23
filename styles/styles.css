@@ -1,147 +1,67 @@
-/**************************
-UNIVERSAL
-**************************/
+/*
+    - Dark blue: rgb(50, 68, 87)
+    - Light blue background: rgb(246, 249, 252)
+    - Search box blue: rgb(227, 234, 240)
+*/
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-/**************************
-LAYOUTS
-**************************/
-/* Header layout */
-.left-nav-container, .middle-nav-container, .right-nav-container {
-    float: left;
-    width: 33.33%;
-    height: 50px;
-}
-/* Tagline section layout */
-.tagline-section, .tagline-image-section {
-    float: left;
-    width: 50%;
-    height: 500px;
-    background-color: white;
-}
-/* Feature container layout */
-.feature-container {
-    float: left;
-    width: 25%;
-    height: 300px;
-    background-color: white;
-    padding: 30px 0 0 15px;
-}
-/* Bottom container layout */
-.bottom-container {
-    float: left;
-    width: 100%;
-    height: 300px;
-    padding: 30px 0 0 15px;
-    background-color: rgb(220, 230, 248);
-}
-
-/**************************
-ADDITIONAL STYLES
-**************************/
-/* Navigation bar styles */
+/* Universal Header styles */
 header {
-    background-color: rgb(220, 230, 248);
-    height: 50px;
+    background-color: rgb(246, 249, 252);
 }
 .company-name {
-    font-size: 1.8rem;
-    color: rgb(0, 52, 88);
-    padding: 5px 0 0 20px;
-}
-.header-nav-link {
-    float: left;
-    width: 25%;
-    text-align: center;
-    padding: 13px 0 0 0;
-}
-.header-btn {
-    float: right;
-    width: 100px;
-    height: 30px;
-    margin: 7px 15px 0 0;
-    border: none;
-    background-color: rgb(0, 52, 88);
-    color: white;
-    border-radius: 5px;
-}
-/* Tagline display styles */
-.tagline-section {
-    padding: 90px 0 0 0;
-}
-.tagline {
-    padding: 0 0 20px 14%;
-}
-h1 {
-    color: rgb(0, 52, 88);
-    padding: 10px 14%;
-    font-size: 2.5rem;
-}
-input[type="text"] {
-    height: 30px;
-    width: 35%;
-    border: none;
-    background-color: rgb(220, 230, 248);
-    color: rgb(0, 52, 88);
-    font-size: 1.1rem;
-    padding-left: 15px;
-    margin: 0 0 0 14%;
-}
-.tagline-btn {
-    width: 100px;
-    height: 30px;
-    border: none;
-    background-color: rgb(0, 52, 88);
-    color: white;
-    margin: 0 0 20px -5px;
-    padding: 10px 0;
-}
-.about-paragraph {
-    color: rgb(0, 52, 88);
-    font-size: 1.1rem;
-    padding: 10px 0 0 14%;
-}
-/* Webpage image display styles */
-.tagline-img {
-    height: 100%;
-    width: auto;
-    transform: translate(20%);
-    background-color: rgb(220, 230, 248);
-}
-/* Feature container styles */
-.feature-img {
-    width: 50px;
-    height: auto;
-    margin: 0 6%;
-}
-.feature-header {
-    color: rgb(0, 52, 88);
-    padding: 0 6%;
-}
-.feature-paragraph {
-    color: rgb(0, 52, 88);
-    padding: 15px 6% 25px 6%;
-}
-.feature-link {
-    color: rgb(0, 52, 88);
-    padding: 0 6%;
+    color: rgb(50, 68, 87);
+    font-family: "Commissioner", sans-serif;
+    font-size: 2.0rem;
+    font-weight: 600;
 }
 
-/* Bottom container styles */
-h2 {
-    padding: 10px 6%;
-    color: rgb(0, 52, 88);
-    font-size: 2.1rem;
+/* Mobile layouts */
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+    }
+    header > ul {
+        display: none;
+    }
 }
-h2 + p {
-    padding: 10px 6%;
-    color: rgb(0, 52, 88);
-    font-size: 1.1rem;
+
+/* Desktop layouts */
+@media screen and (min-width: 769px) {
+
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+    }
+    .mobile-menu-container {
+        display: none;
+    }
+    header > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-item {
+        list-style-type: none;
+        padding: 0 15px;
+        font-family: "Commissioner", sans-serif;
+        font-size: 1.2rem;
+        color: rgb(50, 68, 87);
+        font-weight: 500;
+    }
+
 }
+
