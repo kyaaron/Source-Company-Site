@@ -307,13 +307,15 @@ body {
         justify-content: center;
         align-items: end;
         font-style: normal;
+        
     }
-    h3 {
+    h3, .footer-link {
+        font-family: "Commissioner", sans-serif;
+        color: rgb(50, 68, 87);
         font-size: 1.0rem;
     }
     .footer-link {
         list-style-type: none;
     }
-    
 }
 
